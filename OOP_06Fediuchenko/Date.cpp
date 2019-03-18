@@ -1,5 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
-//#define NDEBUG
+#define NDEBUG
 
 #include "Date.h"
 #include <ctime>
@@ -212,17 +212,17 @@ const Date Date::operator--(int)
 
 bool Date::operator<(const Date& a) const
 {
-	if(a.year() <= _year )
+	if(_year > a.year() )
 	{
 		return false;
 	}else if(a.year() == _year)
 	{
-		if(a.month() <= _month)
+		if(_month >a.month())
 		{
 			return false;
 		}else if(a.month() == _month)
 		{
-			if (a.day() <= _day)
+			if (_day >=a.day())
 				return false;
 		}
 	}

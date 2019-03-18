@@ -10,13 +10,11 @@ void runInThread()
 	try {
 		const Time firstBegin(0, 45, 22);
 		const Time interval(15, 0, 0);
-		const Date startDate(10, 3, 2019);
+		const Date startDate(5, 3, 2019);
 
 		Timer timer(startDate, firstBegin, interval);
-		timer.turnOnAlarm();
-
-		cout << firstBegin << endl;
-	}catch(Date::BadDate e)
+			timer.turnOnAlarm();
+	}catch(Date::BadDate& e)
 	{
 		cout << e << endl;
 	}
@@ -61,10 +59,10 @@ int main()
 			cout << "-+-+-+-+-+-+- #2 Test Timer -+-+-+-+-+-+-" << endl;
 			// Run in thread
 			std::thread first(runInThread);
-			cout << "We have created new Alarm clock";
+			cout << "We have created new Alarm clock: ";
 			first.join();
 		}
-	}catch (Date::BadDate e)
+	}catch (Date::BadDate& e)
 	{
 		cout << e << endl;
 	}

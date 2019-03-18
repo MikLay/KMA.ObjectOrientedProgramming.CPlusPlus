@@ -37,9 +37,7 @@ void Timer::turnOnAlarm()
 }
 
 long Timer::difftime(Date& dateOne, Date& dateTwo, Time& timeOne, Time& timeTwo)
-{
-	
-
+{	
 	if (dateTwo < dateOne)
 		throw "Wrong date input";
 
