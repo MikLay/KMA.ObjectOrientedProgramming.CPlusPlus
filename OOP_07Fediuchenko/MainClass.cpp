@@ -5,6 +5,14 @@ using namespace std;
 
 int main()
 {
+	String s("StringTest");
+	const char* p = s.c_str();
+	s = p;
+	cout << s.c_str() << endl;
+
+	String ss("Test"); ss += ss; cout << ss << endl;
+	
+
 	// Testing constructors
 	// Test char*
 	cout << "<<<<<<<<<<<<< #1 Testing Constructors >>>>>>>>>>>>>>\n";
@@ -37,10 +45,10 @@ int main()
 	// Convertors
 	cout << "str_5.STL_string(): " << str5.STL_string() << endl;
 	cout << "str_5.c_str(): " << str5.c_str() << endl;
-	
+
 	// Length of String
 	cout << "str_5.length(): " << str5.length() << endl;
-	
+
 	// Empty
 	cout << "Is str_5 empty: ";
 	cout << (str5.empty() ? "Yes\n" : "No\n");
@@ -56,8 +64,8 @@ int main()
 	str2 = str1;
 	cout << "str_2 = str_1: " << str2 << endl;
 
-	cout << (str2 == str1? "str_2 == str_1": "str_2 != str_1") << endl;
-	
+	cout << (str2 == str1 ? "str_2 == str_1" : "str_2 != str_1") << endl;
+
 	// Call convertion
 	str2 = string1;
 	cout << "str_2 = string_1: " << str2 << endl;
@@ -69,39 +77,47 @@ int main()
 	cout << "str_2 = ch_1: " << str2 << endl;
 
 	// Test [] operators
-	try {
+	try
+	{
 		cout << "str_3[-1]: ";
 		str3[-1];
 		cout << endl;
 	}
-	catch (String::BadString& e) {
+	catch (String::BadString& e)
+	{
 		e.diagnose();
 	}
 
-	try {
+	try
+	{
 		cout << "str_3[2]";
 		str3[2];
 		cout << endl;
 	}
-	catch (String::BadString& e) {
+	catch (String::BadString& e)
+	{
 		e.diagnose();
 	}
 
-	try {
+	try
+	{
 		cout << "str_4[-1]";
 		str4[-1];
 		cout << endl;
 	}
-	catch (String::BadString& e) {
+	catch (String::BadString& e)
+	{
 		e.diagnose();
 	}
 
-	try {
+	try
+	{
 		cout << "str_4[2]";
 		str4[2];
 		cout << endl;
 	}
-	catch (String::BadString& e) {
+	catch (String::BadString& e)
+	{
 		e.diagnose();
 	}
 
@@ -115,7 +131,7 @@ int main()
 	cout << (str6 <= str8 ? "str_6 <= str_8" : "str_6 > str_8") << endl;
 	cout << (str7 >= str9 ? "str_7 >= str_9" : "str_7 < str_9") << endl;
 
-	
+
 	cout << "str_6 += string_1: " << (str6 += string1) << endl;
 
 	cout << "str_7 += char_1: " << (str7 += char1) << endl;

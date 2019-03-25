@@ -78,7 +78,7 @@ String& String::operator=(const string& s)
 
 String& String::operator=(const char* ps)
 {
-	if (ps == nullptr) // Якщо С-рядок невизначений,
+	if (ps == nullptr || ps == _allocator) // Якщо С-рядок невизначений,
 		return *this; // то виходимо, не змінюючи this
 	delete[] _allocator; // Видаляємо старий рядок
 	for (_len = 0; ps[_len]; _len++); // Знаходимо нове значення довжини
@@ -174,6 +174,9 @@ bool String::operator>=(const String& s) const
 // Оператор присвоєння з конкатенацією
 String& String::operator+=(const String& s)
 {
+	char* tempal = new char[s._len+1];
+	strcpy_s(tempal,s._len+1 ,s._allocator);
+	
 	const size_t len = _len + s._len; // Довжина результату конкатенації
 	// ReSharper disable once CppUseAuto
 	char* newAllocator = new char[len + 1]; // Виділення місця під результат
@@ -181,9 +184,13 @@ String& String::operator+=(const String& s)
 	// на нове місце
 	delete[] _allocator; // Вивільнення місця попереднього розташування
 	_allocator = newAllocator; // Переспрямування указника на рядок
-	strcpy(_allocator + _len, s._allocator); // Дописування другого рядка
+	strcpy(_allocator + _len, tempal); // Дописування другого рядка
 	// в кінець зарезервованого місця
 	_len = len; // Запам'ятовування довжини нового рядка
+	
+	delete[] tempal;
+	tempal = nullptr;
+	
 	return *this; // Вихід без копіювання результату
 }
 
