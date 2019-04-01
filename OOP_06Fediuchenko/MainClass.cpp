@@ -8,9 +8,9 @@ using namespace std;
 void runInThread()
 {
 	try {
-		const Time firstBegin(0, 45, 22);
-		const Time interval(15, 0, 0);
-		const Date startDate(5, 3, 2019);
+		const Time firstBegin(0, 47, 15);
+		const Time interval(5, 0, 0);
+		const Date startDate(23, 3, 2019);
 
 		Timer timer(startDate, firstBegin, interval);
 			timer.turnOnAlarm();
@@ -27,7 +27,7 @@ int main()
 		// Test Time
 		{
 			cout << "-+-+-+-+-+-+- #1 Test Time -+-+-+-+-+-+-" << endl;
-			const Time first(15, 250, 15);
+			const Time first(0, 46, 15);
 			cout << "Created and normalized Time: " << first;
 			Time second(first);
 			cout << "Copied by constructor Time: " << second;

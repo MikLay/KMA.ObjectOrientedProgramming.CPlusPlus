@@ -19,6 +19,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_07Fediuchenko", "OOP_07
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_08Fediuchenko", "OOP_08Fediuchenko\OOP_08Fediuchenko.vcxproj", "{4E82370A-1134-40A8-9C63-D150A65C5FED}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_09Fediucehnko", "OOP_09Fediucehnko\OOP_09Fediucehnko.vcxproj", "{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -91,6 +93,14 @@ Global
 		{4E82370A-1134-40A8-9C63-D150A65C5FED}.Release|x64.Build.0 = Release|x64
 		{4E82370A-1134-40A8-9C63-D150A65C5FED}.Release|x86.ActiveCfg = Release|Win32
 		{4E82370A-1134-40A8-9C63-D150A65C5FED}.Release|x86.Build.0 = Release|Win32
+		{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}.Debug|x64.ActiveCfg = Debug|x64
+		{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}.Debug|x64.Build.0 = Debug|x64
+		{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}.Debug|x86.ActiveCfg = Debug|Win32
+		{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}.Debug|x86.Build.0 = Debug|Win32
+		{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}.Release|x64.ActiveCfg = Release|x64
+		{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}.Release|x64.Build.0 = Release|x64
+		{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}.Release|x86.ActiveCfg = Release|Win32
+		{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
