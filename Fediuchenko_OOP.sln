@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OPP_01Fediuchenko", "OPP_01Fediuchenko\OPP_01Fediuchenko.vcxproj", "{925A3392-E21E-4E50-B555-66517D316803}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_01Fediuchenko", "OPP_01Fediuchenko\OPP_01Fediuchenko.vcxproj", "{925A3392-E21E-4E50-B555-66517D316803}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_02Fediuchenko", "OOP_02Fediuchenko\OOP_05Fediuchenko.vcxproj", "{579920D2-5025-4033-937C-95CA9973E186}"
 EndProject
@@ -11,7 +11,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_04Fediuchenko", "OOP_04
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_03Fediuchenko", "OOP_03Fediuchenko\OOP_NestedProject.vcxproj", "{287274E9-3E85-4029-8259-5A1C03930924}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_05Fediuchenko_2019", "OOP_05Fediuchenko\OOP_05Fediuchenko_2019.vcxproj", "{F2C045EE-4DA8-4043-AC0E-D86EED499283}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_05Fediuchenko", "OOP_05Fediuchenko\OOP_05Fediuchenko_2019.vcxproj", "{F2C045EE-4DA8-4043-AC0E-D86EED499283}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_06Fediuchenko", "OOP_06Fediuchenko\OOP_06Fediuchenko.vcxproj", "{20C607D9-D274-477B-8852-2EDECA0704EC}"
 EndProject
@@ -19,7 +19,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_07Fediuchenko", "OOP_07
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_08Fediuchenko", "OOP_08Fediuchenko\OOP_08Fediuchenko.vcxproj", "{4E82370A-1134-40A8-9C63-D150A65C5FED}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_09Fediucehnko", "OOP_09Fediucehnko\OOP_09Fediucehnko.vcxproj", "{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_09Fediuchenko", "OOP_09Fediucehnko\OOP_09Fediucehnko.vcxproj", "{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OOP_10Fediuchenko", "OOP_10Fediuchenko\OOP_10Fediuchenko.vcxproj", "{C2BB4D34-0C0C-49D6-95A7-D63032B80E04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,14 @@ Global
 		{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}.Release|x64.Build.0 = Release|x64
 		{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}.Release|x86.ActiveCfg = Release|Win32
 		{9F9F32DA-91E6-4A65-838B-5F4D2F47C66C}.Release|x86.Build.0 = Release|Win32
+		{C2BB4D34-0C0C-49D6-95A7-D63032B80E04}.Debug|x64.ActiveCfg = Debug|x64
+		{C2BB4D34-0C0C-49D6-95A7-D63032B80E04}.Debug|x64.Build.0 = Debug|x64
+		{C2BB4D34-0C0C-49D6-95A7-D63032B80E04}.Debug|x86.ActiveCfg = Debug|Win32
+		{C2BB4D34-0C0C-49D6-95A7-D63032B80E04}.Debug|x86.Build.0 = Debug|Win32
+		{C2BB4D34-0C0C-49D6-95A7-D63032B80E04}.Release|x64.ActiveCfg = Release|x64
+		{C2BB4D34-0C0C-49D6-95A7-D63032B80E04}.Release|x64.Build.0 = Release|x64
+		{C2BB4D34-0C0C-49D6-95A7-D63032B80E04}.Release|x86.ActiveCfg = Release|Win32
+		{C2BB4D34-0C0C-49D6-95A7-D63032B80E04}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
